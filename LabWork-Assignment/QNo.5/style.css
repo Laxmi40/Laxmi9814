@@ -1,0 +1,63 @@
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #b69e9e;
+}
+
+.calculator {
+    background-color: #280724;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(143, 109, 109, 0.2);
+}
+
+.display {
+    width: 100%;
+    height: 50px;
+    background-color: #680a54;
+    color: #fff;
+    text-align: right;
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.buttons button {
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #555;
+    color: #fff;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: #777;
+}
+
+.buttons button.operator {
+    background-color: #1f19cf;
+}
+
+.buttons button.operator:hover {
+    background-color: #1c0e03;
+}

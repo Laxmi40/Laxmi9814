@@ -1,0 +1,48 @@
+<!-- 7. Create a Responsive Navigation Menu Using CSS Flexbox  
+   - Design a responsive navigation menu using HTML and CSS.  
+   - Utilize CSS Flexbox to align and space menu items appropriately.  
+   - Ensure the menu adapts to different screen sizes, including a collapsible hamburger menu for mobile devices.   -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation Menu</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">MyLogo</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <script>
+        // JavaScript for Hamburger Menu
+        document.addEventListener('DOMContentLoaded', function () {
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
